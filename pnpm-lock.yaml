@@ -24,6 +24,9 @@ importers:
       '@types/google-publisher-tag':
         specifier: ^1.20260525.0
         version: 1.20260525.0
+      '@types/google_interactive_media_ads_types':
+        specifier: ^3.697.1
+        version: 3.697.1
       '@types/node':
         specifier: ^20
         version: 20.19.41
@@ -544,6 +547,9 @@ packages:
 
   '@types/google-publisher-tag@1.20260525.0':
     resolution: {integrity: sha512-YwwAgrQTpN5lHcs7H/5zZLs0fuuN62Jj29cmUn1oSSWDBviXNzDQoaOvA6/xOmsOzF+a9SyJWY5c9vsvkfeVpg==}
+
+  '@types/google_interactive_media_ads_types@3.697.1':
+    resolution: {integrity: sha512-gRjJoPKQRjjTuySHqZe8Pnu6a5B0bKbTUD2ioDLPSWlEuBaAc2p1mzUzy42SCeWkyYffo2Mnv+blUGuvVvx3dQ==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2421,6 +2427,8 @@ snapshots:
   '@types/estree@1.0.9': {}
 
   '@types/google-publisher-tag@1.20260525.0': {}
+
+  '@types/google_interactive_media_ads_types@3.697.1': {}
 
   '@types/json-schema@7.0.15': {}
 

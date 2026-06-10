@@ -1,6 +1,8 @@
+'use client'
+
 import GptAdSlot from '@/components/GptAdSlot'
 
-const AD_UNIT_PATH = '/your-network-code/your-ad-unit'
+const AD_UNIT_PATH = '/23300104091/test_spencer_yang/test_html_ad_unit'
 
 export default function Home() {
   return (
@@ -8,23 +10,12 @@ export default function Home() {
       <h1 className="text-2xl font-bold text-gray-800">GAM HTML5 Tester</h1>
 
       <section className="flex flex-col items-center gap-2">
-        <p className="text-sm text-gray-500">300 x 250</p>
+        <p className="text-sm text-gray-500">1024 x 768</p>
         <div className="bg-white shadow">
           <GptAdSlot
             adUnitPath={AD_UNIT_PATH}
-            size={[300, 250]}
-            divId="div-gpt-ad-300x250"
-          />
-        </div>
-      </section>
-
-      <section className="flex flex-col items-center gap-2">
-        <p className="text-sm text-gray-500">728 x 90</p>
-        <div className="bg-white shadow">
-          <GptAdSlot
-            adUnitPath={AD_UNIT_PATH}
-            size={[728, 90]}
-            divId="div-gpt-ad-728x90"
+            size={[1024, 768]}
+            divId="div-gpt-ad-1024x768"
           />
         </div>
       </section>
