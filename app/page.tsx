@@ -3,6 +3,8 @@
 import GptAdSlot from '@/components/GptAdSlot'
 
 const AD_UNIT_PATH = '/23300104091/test_spencer_yang/test_html_ad_unit'
+const IFRAME_URL =
+  'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio'
 
 export default function Home() {
   return (
@@ -18,6 +20,9 @@ export default function Home() {
             divId="div-gpt-ad-1024x768"
           />
         </div>
+        <p className="mt-2 text-xs text-gray-500 break-all max-w-3xl text-center">
+          {IFRAME_URL}
+        </p>
       </section>
     </main>
   )
