@@ -1,7 +1,7 @@
 'use client'
 
 const IFRAME_URL =
-  'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio'
+  'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio_noGAM'
 const CLICK_URL = 'https://www.viverse.com/LpcA8dm'
 
 export default function NoGam() {
