@@ -3,6 +3,8 @@
 const IFRAME_URL =
   'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio_noGAM'
 const CLICK_URL = 'https://www.viverse.com/LpcA8dm'
+const SLOT_WIDTH = 970
+const SLOT_HEIGHT = 250
 
 export default function NoGam() {
   return (
@@ -12,10 +14,12 @@ export default function NoGam() {
       </h1>
 
       <section className="flex flex-col items-center gap-2">
-        <p className="text-sm text-gray-500">1024 x 768</p>
+        <p className="text-sm text-gray-500">
+          {SLOT_WIDTH} x {SLOT_HEIGHT}
+        </p>
         <div
           className="relative bg-white shadow"
-          style={{ width: 1024, height: 768 }}
+          style={{ width: SLOT_WIDTH, height: SLOT_HEIGHT }}
         >
           <iframe
             src={IFRAME_URL}

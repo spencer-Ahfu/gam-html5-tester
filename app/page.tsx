@@ -5,6 +5,8 @@ import GptAdSlot from '@/components/GptAdSlot'
 const AD_UNIT_PATH = '/23300104091/test_spencer_yang/test_html_ad_unit'
 const IFRAME_URL =
   'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio'
+const SLOT_WIDTH = 970
+const SLOT_HEIGHT = 250
 
 export default function Home() {
   return (
@@ -12,12 +14,14 @@ export default function Home() {
       <h1 className="text-2xl font-bold text-gray-800">GAM HTML5 Tester</h1>
 
       <section className="flex flex-col items-center gap-2">
-        <p className="text-sm text-gray-500">1024 x 768</p>
+        <p className="text-sm text-gray-500">
+          {SLOT_WIDTH} x {SLOT_HEIGHT}
+        </p>
         <div className="bg-white shadow">
           <GptAdSlot
             adUnitPath={AD_UNIT_PATH}
-            size={[1024, 768]}
-            divId="div-gpt-ad-1024x768"
+            size={[SLOT_WIDTH, SLOT_HEIGHT]}
+            divId={`div-gpt-ad-${SLOT_WIDTH}x${SLOT_HEIGHT}`}
           />
         </div>
         <p className="mt-2 text-xs text-gray-500 break-all max-w-3xl text-center">
