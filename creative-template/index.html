@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VIVERSE advertisement</title>
+
+    <!-- ================================================================ -->
+    <!-- ★★★ 可調整設定 ★★★ 修改下方四個值即可，其他地方不用動         -->
+    <!-- IFRAME_SRC 要加上 utm         -->
+    <!-- ================================================================ -->
+    <script>
+      const CONFIG = {
+        WIDTH: '',
+        HEIGHT: '',
+        IFRAME_SRC: '',
+        CLICK_URL: '',
+      }
+    </script>
+    <!-- ================================================================ -->
+
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #000;
+      }
+      .frame-wrap {
+        position: relative;
+        width: fit-content;
+      }
+      iframe {
+        display: block;
+        border: 0;
+      }
+      .click-overlay {
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame-wrap">
+      <iframe id="ad-iframe" title="VIVERSE world" allowfullscreen></iframe>
+      <div id="click-overlay" class="click-overlay"></div>
+    </div>
+
+    <script>
+      const iframe = document.getElementById('ad-iframe')
+      iframe.width = CONFIG.WIDTH
+      iframe.height = CONFIG.HEIGHT
+      iframe.src = CONFIG.IFRAME_SRC
+
+      document.getElementById('click-overlay').onclick = () => {
+        window.open(CONFIG.CLICK_URL, '_blank')
+      }
+    </script>
+  </body>
+</html>
