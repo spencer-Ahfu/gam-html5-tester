@@ -1,8 +1,8 @@
 'use client'
 
 const IFRAME_URL =
-  'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&utm_campaign=bloxdio_noGAM'
-const CLICK_URL = 'https://www.viverse.com/LpcA8dm'
+  'https://www.viverse.com/LpcA8dm?full3d=&no-cookie=&autoplay=1&controls=0&size=970*250&partner=Anymind&utm_campaign=anymindtw_noGAM'
+const CLICK_URL = 'https://www.viverse.com/games'
 const SLOT_WIDTH = 970
 const SLOT_HEIGHT = 250
 
@@ -23,8 +23,8 @@ export default function NoGam() {
         >
           <iframe
             src={IFRAME_URL}
-            width={1024}
-            height={768}
+            width={SLOT_WIDTH}
+            height={SLOT_HEIGHT}
             style={{ border: 'none', display: 'block' }}
             allowFullScreen
             title="GTA"
